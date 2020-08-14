@@ -19,8 +19,8 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 50pt 20pt;
-  margin: 50pt;
+  padding: 70px 30px;
+  margin: 65px;
   background-color: #fec89a;
   border-radius: 10px;
 }
@@ -39,12 +39,12 @@ nav>a {
 }
 
 hr {
-  margin: 10pt 0 10pt 0;
+  margin: 15px 0 15px 0;
 }
 
 ul {
   list-style-position: inside;
-  margin: 15pt 40pt 15pt 40pt;
+  margin: 20px 55px 20px 55px;
 }
 
 li:not(:last-child) {
