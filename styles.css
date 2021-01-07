@@ -30,7 +30,7 @@ nav {
   display: contents;
 }
 
-nav>a {
+nav > a {
   font-size: 1.8em;
   color: #6d6875;
 }
@@ -56,7 +56,7 @@ div.now:not(:first-child) {
   padding-top: 10px;
 }
 
-@media only screen and (max-width:850px) {
+@media only screen and (max-width: 850px) {
   header {
     flex-direction: column;
     text-align: center;
