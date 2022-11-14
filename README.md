@@ -1,6 +1,10 @@
 # [`natestemen.xyz`](https://natestemen.xyz)
 A small website for me, handcrafted with machine 🥰.
 
+---
+
+The following section was from when I had my website hosted on a VPS.
+I've since switched to GitHub pages not because I like it more, but because it's convenient.
 
 ## website setup
 
