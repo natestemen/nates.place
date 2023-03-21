@@ -26,6 +26,11 @@ header {
   border-radius: 10px;
 }
 
+footer {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
 nav {
   display: contents;
 }
