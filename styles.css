@@ -1,3 +1,8 @@
+:root {
+  --text-color-dark: black;
+  --text-color-light: rgb(97, 97, 97);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -53,12 +58,24 @@ li:not(:last-child) {
   margin-bottom: 10px;
 }
 
+div.now {
+  color: var(--text-color-light);
+}
+
+div.now:hover {
+  color: var(--text-color-dark);
+}
+
 div.now:not(:last-child) {
   padding-bottom: 10px;
 }
 
 div.now:not(:first-child) {
   padding-top: 10px;
+}
+
+div#now {
+  color: var(--text-color-dark);
 }
 
 @media only screen and (max-width: 850px) {
