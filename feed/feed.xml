@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="pretty-atom-feed.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>place: internate</title>
+  <subtitle>nate writing about things happening in life.</subtitle>
+  <link href="https://nates.place/eleventy-base-blog/feed/feed.xml" rel="self" />
+  <link href="https://nates.place/eleventy-base-blog/" />
+  <updated>2025-03-04T23:49:32Z</updated>
+  <id>https://nates.place/eleventy-base-blog/</id>
+  <author>
+    <name>nate</name>
+  </author>
+</feed>
