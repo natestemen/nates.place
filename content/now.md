@@ -12,12 +12,10 @@ const eleventyNavigation = {
 ## Feb 15<sup>th</sup>, 2025
 
 2024 was a bit of a doozy.
-Currently working to bring quantum utility faster.
-Hoping that can happen by means of improved quantum error mitigation, and circuit compilation.
-Trying to spend as much time as I can getting a big picture understanding of the larger field of quantum computation.
+Trying to spend as much time as I can getting a big picture understanding of the larger field of quantum computation, while progressing smaller pieces (quantum error mitigation and circuit compilation).
 Spending some time back in some academic circles at the University of Washington's [quantum group](https://quantum.cs.washington.edu/).
 
-Training hard in hopes of redpointing 5.11b (sport) this year, and am currently signed up to run my first ultramarathon in September.
+Training for climbing in hopes of redpointing 5.11b (sport) this year, and signed up to run my first ultramarathon in September.
 Physically, it might be a bit too much to do both, but I'm aiming high.
 
 Thinking about ways to grow and establish community.
