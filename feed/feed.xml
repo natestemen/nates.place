@@ -3,10 +3,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>place: internate</title>
   <subtitle>nate writing about things happening in life.</subtitle>
-  <link href="https://nates.place/eleventy-base-blog/feed/feed.xml" rel="self" />
-  <link href="https://nates.place/eleventy-base-blog/" />
-  <updated>2025-03-05T00:08:23Z</updated>
-  <id>https://nates.place/eleventy-base-blog/</id>
+  <link href="https://nates.place/feed/feed.xml" rel="self" />
+  <link href="https://nates.place/" />
+  <updated>2025-03-05T00:12:10Z</updated>
+  <id>https://nates.place/</id>
   <author>
     <name>nate</name>
   </author>

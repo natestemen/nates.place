@@ -2,32 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
-		<loc>https://nates.place/eleventy-base-blog/about/</loc>
+		<loc>https://nates.place/about/</loc>
 		<lastmod>2025-03-05</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://nates.place/eleventy-base-blog/blog/</loc>
+		<loc>https://nates.place/blog/</loc>
 		<lastmod>2025-03-05</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://nates.place/eleventy-base-blog/</loc>
+		<loc>https://nates.place/</loc>
 		<lastmod>2025-03-05</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://nates.place/eleventy-base-blog/now/</loc>
+		<loc>https://nates.place/now/</loc>
 		<lastmod>2025-03-05</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://nates.place/eleventy-base-blog/tags/</loc>
+		<loc>https://nates.place/tags/</loc>
 		<lastmod>2025-03-05</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://nates.place/eleventy-base-blog/feed/feed.xml</loc>
+		<loc>https://nates.place/feed/feed.xml</loc>
 		<lastmod>2025-03-05</lastmod>
 	</url>
 </urlset>
