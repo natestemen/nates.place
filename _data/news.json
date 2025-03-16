@@ -1,0 +1,15 @@
+[
+    {
+      "date": "2025-02-07",
+      "description": "Visiting [QuSoft](https://qusoft.org/) for a few days! Gave a talk: _Quantum Error Mitigation; from theory to practice_ [[slides](https://natestemen.github.io/qem-qusoft/)]"
+    },
+    {
+      "date": "2025-02-02",
+      "description": "Co-organized the quantum computing devroom at FOSDEM alongside [Alessandro](https://cosenal.github.io/) and [Purva](https://github.com/purva-thakre). Our write up is available on the [UF blog](https://unitary.foundation/posts/2025_fosdem_recap/)!"
+    },
+    {
+      "date": "2024-08-17",
+      "description": "Co-organized a series of talks on Mitiq at the [QNumerics summer school](https://qnumerics.org/2024/) with the UF team."
+    }
+]
+  

@@ -37,6 +37,16 @@ const numberOfLatestPostsToShow = 3;
 	</li>
 </ul>
 
+<h2>recent happenings</h2>
+
+<ul>
+  {% for item in news | latestNews(5) %}
+    <li>
+      <strong>{{ item.date }}</strong>:
+      <span>{{ item.description | markdownify | safe }}</span>
+    </li>
+  {% endfor %}
+</ul>
 
 {# {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
