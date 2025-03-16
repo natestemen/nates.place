@@ -2,14 +2,45 @@
 const numberOfLatestPostsToShow = 3;
 ---
 
-<h1>👋</h1>
-<p>welcome to my internet place</p>
+<h1>👋 howdy 🤠</h1>
 
-<p>If you don't know me, check out my <a href="/about"><code>/about</code></a> page.
+<p>
+	welcome to my internet place 🛋️.
+	let me take your jacket 🧥 and please take off your shoes 👟.
+	i'm glad you're here.
+	can i get you a drink ☕️?
+</p>
 
-{% set postsCount = collections.posts | length %}
+<h2>quick intro</h2>
+<ul>
+	<li>
+		for work, i practice software development, mitigating errors on quantum computers, and technical writing.
+	</li>
+	<li>
+		i like open source. it's good.
+	</li>
+	<li>
+		i love spending time outdoors. running, climbing, hiking, cycling, swimming, i don't care. just get me OUT!
+	</li>
+</ul>
+
+<p>you can learn more about what i am and where i do if you step into the <a href="/about"><code>/about</code></a> room.</p>
+
+<h2>link up</h2>
+<ul>
+	<li>
+		send me emails @ <a href="mailto:nate@stemen.email">nate@stemen.email</a>.
+		i love getting emails from friends, family, and strangers alike.
+	</li>
+	<li>
+		check out my codes @ <a href="https://github.com/natestemen/">GitHub</a>
+	</li>
+</ul>
+
+
+{# {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
+<h2>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h2>
 
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}
@@ -18,7 +49,7 @@ const numberOfLatestPostsToShow = 3;
 {% set morePosts = postsCount - numberOfLatestPostsToShow %}
 {% if morePosts > 0 %}
 <p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="blog.njk">the archive</a>.</p>
-{% endif %}
+{% endif %} #}
 
 {# List every content page in the project #}
 {#
