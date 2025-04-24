@@ -1,11 +1,19 @@
 [
     {
+      "date": "2025-04-09",
+      "description": "Gave a talk at the University of Washington to the [CS Quantum](https://quantum.cs.washington.edu/) on the sample complexity of quantum error mitigation."
+    },
+    {
+      "date": "2025-03-10",
+      "description": "I'm on Bluesky! After not being on social media for years, this is a bit of an experiment. Trying to engage with quantum folks. Give me internet points: [@loglog.wtf](https://bsky.app/profile/loglog.wtf)."
+    },
+    {
       "date": "2025-02-05",
       "description": "Visited [QuSoft](https://qusoft.org/) Wed-Fri! Gave a talk: _Quantum Error Mitigation; from theory to practice_ [[slides](https://natestemen.github.io/qem-qusoft/)], and got to talk to some amazing researchers. Thanks to [John van de Wetering](https://vdwetering.name/) for the invite."
     },
     {
       "date": "2025-02-02",
-      "description": "Co-organized the quantum computing devroom at FOSDEM alongside [Alessandro](https://cosenal.github.io/) and [Purva](https://github.com/purva-thakre). Our write up is available on the [UF blog](https://unitary.foundation/posts/2025_fosdem_recap/)!"
+      "description": "I Co-organized the quantum computing devroom at FOSDEM alongside [Alessandro](https://cosenal.github.io/) and [Purva](https://github.com/purva-thakre). Our write up is available on the [UF blog](https://unitary.foundation/posts/2025_fosdem_recap/)!"
     },
     {
       "date": "2024-09-21",
