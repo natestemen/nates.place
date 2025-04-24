@@ -9,6 +9,20 @@ const eleventyNavigation = {
     This is my <a href="https://nownownow.com/about">now</a> page.
 </small>
 
+## March 23<sup>rd</sup>, 2025
+
+In the midst of planning an academic workshop on error mitigation ([werq.shop](https://werq.shop/)), which is both fun and nerve-wracking.
+I hope people will come and enjoy it!
+
+On the personal side, I'm rehabbing an A2 pulley injury from climbing, which is a bummer, but I'm still able to climb on the lighter side.
+Recently went to Smith Rock for the first time and had a blast climbing some awesome multipitch routes.
+Running training is going well.
+Just building up mileage at the moment, and trying to stay injury free.
+
+Lastly, I'm working through the perennial struggle that behooves anyone on the adhd spectrum: how to align my work and time with my values.
+
+---
+
 ## Feb 15<sup>th</sup>, 2025
 
 2024 was a bit of a doozy.
