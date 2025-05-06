@@ -34,6 +34,8 @@ Physically, it might be a bit too much to do both, but I'm aiming high.
 
 Thinking about ways to grow and establish community.
 
+---
+
 ## Feb 25<sup>th</sup>, 2024
 
 Trying my best to stay active and engaged with people this winter.
