@@ -16,6 +16,10 @@
       "description": "I Co-organized the quantum computing devroom at FOSDEM alongside [Alessandro](https://cosenal.github.io/) and [Purva](https://github.com/purva-thakre). Our write up is available on the [UF blog](https://unitary.foundation/posts/2025_fosdem_recap/)!"
     },
     {
+      "date": "2024-12-24",
+      "description": "Wrote a blog post on the UF blog about the [5-year impact of Mitiq](https://unitary.foundation/posts/2024_mitiq_impact/)."
+    },
+    {
       "date": "2024-09-21",
       "description": "Preached about random number generators, and how quantum computers can be used to generate true random numbers to anyone who would listen at the [Georgetown Steam Plant Science Fair](https://www.georgetownsteamplant.org/2024). [[insta](https://www.instagram.com/georgetownsciencefair/p/DGCFgQAyq8s/)]"
     },
