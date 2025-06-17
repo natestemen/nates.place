@@ -53,3 +53,4 @@ Whether that is through a blog post, or the meta-process of reflecting on previo
 
 - [https://www.swyx.io/learn-in-public](https://www.swyx.io/learn-in-public)
 - [https://andysblog.uk/why-blog-if-nobody-reads-it/](https://andysblog.uk/why-blog-if-nobody-reads-it/)
+- https://ashley.dev/posts/fear-of-being-seen/
