@@ -1,7 +1,11 @@
 [
     {
+      "date": "2025-07-10",
+      "description": "Talked about noise in quantum computing at SciPy 2025 in Tacoma, WA. My slides, which I had a lot of fun drawing, are available [here](static/scipy2025.pdf)."
+    },
+    {
       "date": "2025-04-09",
-      "description": "Gave a talk at the University of Washington to the [CS Quantum](https://quantum.cs.washington.edu/) on the sample complexity of quantum error mitigation."
+      "description": "Gave a chalk talk at the University of Washington to the [CS Quantum](https://quantum.cs.washington.edu/) on the sample complexity of quantum error mitigation."
     },
     {
       "date": "2025-03-10",
