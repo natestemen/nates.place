@@ -1,5 +1,9 @@
 [
     {
+      "date": "2025-07-17",
+      "description": "I organized [WERQSHOP](https://werq.shop)! A two-day workshop on error resilience in quantum computing at NYU. It was a bit stressful managing the logistics, but it was a huge success!"
+    },
+    {
       "date": "2025-07-10",
       "description": "Talked about noise in quantum computing at SciPy 2025 in Tacoma, WA. My slides, which I had a lot of fun drawing, are available [here](static/scipy2025.pdf)."
     },
