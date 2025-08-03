@@ -9,6 +9,20 @@ const eleventyNavigation = {
     This is my <a href="https://nownownow.com/about">now</a> page.
 </small>
 
+## August 3<sup>rd</sup>, 2025
+
+[WERQSHOP](https://werq.shop/) is complete and it was awesome!
+Now I'm working on synthesizing something useful for the braoder quantum community.
+
+My hopes of running an ultra in September have been derailed by some stubborn IT-band issues.
+On the climbing side, I still have hopes of redpointing a 5.11b this year, but that was also partially impacted by an accident in the kitchen involving me and a watermelon.
+I'm recovered now though, and since running is taking a back seat for now I'm even more determined to get after it.
+
+I've given a lot of myself to work over the past few months while organizing WERQSHOP on top of trying to lead `mitiq`.
+Now I'm trying to fall back in to what feels like a more sustainable work-life balance.
+
+---
+
 ## March 23<sup>rd</sup>, 2025
 
 In the midst of planning an academic workshop on error mitigation ([werq.shop](https://werq.shop/)), which is both fun and nerve-wracking.
