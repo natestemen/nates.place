@@ -1,11 +1,19 @@
 [
     {
+      "date": "2025-08-06",
+      "description": "I gave a talk at the BMW Quantum research group on quantum error mitigation and `mitiq`."
+    },
+    {
+      "date": "2025-08-05",
+      "description": "I presented at the [Quantum@UW REU](https://quantumreu.cs.washington.edu/) seminar on quantum error mitigation and `mitiq`. [[link](https://www.quantumx.washington.edu/nate-stemen-unitary-foundation/)]"
+    },
+    {
       "date": "2025-07-17",
       "description": "I organized [WERQSHOP](https://werq.shop)! A two-day workshop on error resilience in quantum computing at NYU. It was a bit stressful managing the logistics, but it was a huge success!"
     },
     {
       "date": "2025-07-10",
-      "description": "Talked about noise in quantum computing at SciPy 2025 in Tacoma, WA. My slides, which I had a lot of fun drawing, are available [here](static/scipy2025.pdf)."
+      "description": "Talked about noise in quantum computing at SciPy 2025 in Tacoma, WA. My slides, which I had a lot of fun drawing, are available [here](static/scipy2025.pdf) along with a [recording](https://www.youtube.com/watch?v=sUm-pQBMeXc)."
     },
     {
       "date": "2025-04-09",
