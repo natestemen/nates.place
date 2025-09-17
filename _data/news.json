@@ -1,5 +1,9 @@
 [
     {
+      "date": "2025-08-26",
+      "description": "I created a zine! It's called **`nates gates`** available as a pdf [here](static/ng01.pdf)."
+    },
+    {
       "date": "2025-08-06",
       "description": "I gave a talk at the BMW Quantum research group on quantum error mitigation and `mitiq`."
     },
