@@ -12,7 +12,7 @@ const eleventyNavigation = {
 ## August 3<sup>rd</sup>, 2025
 
 [WERQSHOP](https://werq.shop/) is complete and it was awesome!
-Now I'm working on synthesizing something useful for the braoder quantum community.
+Now I'm working on synthesizing something useful for the broader quantum community.
 
 My hopes of running an ultra in September have been derailed by some stubborn IT-band issues.
 On the climbing side, I still have hopes of redpointing a 5.11b this year, but that was also partially impacted by an accident in the kitchen involving me and a watermelon.
