@@ -1,7 +1,7 @@
 ---
 title: Writing in public
 description: 
-date: 2025-02-16
+date: 2025-10-19
 tags:
   - internet
   - writing
