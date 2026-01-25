@@ -1,6 +1,6 @@
 ---
 title: Completing the Library
-description: Visiting all  27 SPL branches.
+description: Visiting all 27 SPL branches.
 date: 2026-01-25
 tags:
   - remote work
@@ -29,7 +29,7 @@ It took me just over 2 years to make the trip to all the branches (some are far 
 {% warning %}
   What you'll find below are my subjective rankings of my (usually brief) experience at each branch.
   They don't necessarily reflect what the library is like all or most of the time.
-  The rating is mostly related to how enoyable the branch was to work out of for the 2-4 hour stay I was there.
+  The rating is mostly related to how enjoyable the branch was to work out of for the 2-4 hour stay I was there.
   Some branches are not necessarily designed with this use case in mind, but that does not mean they are not valuable.
   <b>
     The rankings below are nothing more than nate's opinions.
@@ -80,7 +80,7 @@ I love that it's free, that I can browse books or walk around as I please, that 
 There are, however, some ways in which I wish the library served me *even better*.
 Most libraries have relatively limited hours, and sometimes I want to code at 10pm at places other than my home.
 I wish the library had more resources focused beyond that of the written word.
-Last year I had the please of visiting Helsinki's Oodi library which offered access to video games, 3d printers, instruments, sewing machines, laser cutters, and more.
+Last year I had the pleasure of visiting Helsinki's Oodi library which offered access to video games, 3d printers, instruments, sewing machines, laser cutters, and more.
 America is not quite ready, in my mind, for that level of supporting neighbors, but I do see the desire among others to have resources like this.
 Take the many versions of the tool library that have popped up in Seattle (and I hope other cities), where folks can rent power tools for no cost to themselves[^2].
 I've found myself on multiple occasions wanting to use a typewriter for a specific project, but never wanting to bite the bullet and buy (and then store) one.
@@ -93,6 +93,6 @@ Whether or not we continue to call them libraries as the progress on to their ne
 [^2]: There is an optional donation/membership fee for those who can afford.
 
 While I am not planning on 100%-ing the libraries (book and otherwise) in King County, I do still love visiting new libraries when the opportunity arises.
-E.g. the Bellevue library is a great library, even if placed in one of the most dispicable cities imaginable.
+E.g. the Bellevue library is a great library, even if placed in one of the most despicable cities imaginable.
 I hope this inspires you to check out your local library(s), even if you're not a completionist!
 
