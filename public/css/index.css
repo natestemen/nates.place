@@ -155,7 +155,7 @@ tr:nth-child(even) {
 
 @media (prefers-color-scheme: dark) {
 	tr:nth-child(even) {
-	background-color: #2e3a47;
+		background-color: #2e3a47;
 	}
 }
 
