@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Completing the Library</title>
+		<meta name="description" content="Visiting all 27 SPL branches.">
+		<meta name="generator" content="Eleventy v3.1.2">
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="nate&#39;s internet place">
+		
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	max-width: 40em;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img{
+  max-width: 100%;
+}
+img[width][height] {
+  height: auto;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+video,
+iframe {
+	width: 100%;
+	height: auto;
+}
+iframe {
+	aspect-ratio: 16/9;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main,
+footer {
+	padding: 1rem;
+}
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	border-bottom: 1px dashed var(--color-gray-20);
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+/* table {
+	margin: 1em 0;
+} */
+table td,
+table th {
+	padding: 0.5em;
+}
+
+tr:nth-child(even) {
+  background-color: #fff6ed;
+}
+
+@media (prefers-color-scheme: dark) {
+	tr:nth-child(even) {
+		background-color: #2e3a47;
+	}
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	flex-grow: 1;
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	gap: .5em 1em;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+/* Posts list */
+.postlist {
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+.message-box {
+	--color-message-box: #ffc;
+
+	display: block;
+	background-color: var(--color-message-box);
+	color: var(--color-gray-90);
+	padding: 1em 0.625em; /* 16px 10px /16 */
+	margin: 1.25em 0;
+	border-left: 0.25em solid #a07900;
+
+	border-radius: 0px 30px 30px 0px;
+}
+
+.message-box.warning {
+	--color-message-box: #fff4e5;
+	border-left-color: #d06d21;
+}
+
+.message-box__title {
+	margin: 0 0 .5em;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	font-size: 0.75em;
+	color: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+	.message-box.warning {
+		--color-message-box: #432e1e;
+		border-left-color: #fcd34d;
+	}
+}</style>
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">nate&#39;s internet place</a>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/blog/">blog</a></li>
+					<li class="nav-item"><a href="/about/">about</a></li>
+					<li class="nav-item"><a href="/now/">now</a></li>
+					<li class="nav-item"><a href="/feed/feed.xml">feed</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			<heading-anchors>
+				
+<h1 id="completing-the-library">Completing the Library</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2026-01-25">25 January 2026</time></li>
+	<li><a href="/tags/remote-work/" class="post-tag">remote work</a></li>
+</ul>
+
+<p>I 100%-ed the library!
+By that I mean I visited every branch of the Seattle Public Library (SPL) system.</p>
+<p>I love libraries.
+The books and librarians are enough of a draw, but it's also one of the few <a href="https://en.wikipedia.org/wiki/Third_place">third places</a> we have access to today and I try to do my best to make my visitation rounds.
+For me the library is often a place to do computer work — a place to get out of the house and into a new environment for a few hours when I don't have meetings.</p>
+<p>When I moved to Seattle in early 2022 I was wrapping up my masters thesis and the sublease I was staying in was too small to work well in.
+I went looking for new places to pull some hair out while trying to understand quantum compilers, and quickly stumbled upon SPL's Montlake branch.
+The branch quickly became my homebase for writing when the weather was nice since it was a beautiful walk from my place through Interlaken park<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>.
+The libraries beautiful wooden beams and ceiling light up the space when the sun pours in from the massive windows on the north side of the building.
+Much needed during Seattle's dark February/March.</p>
+<p>Since wrapping up my thesis and moving to a new neighborhood, I quickly found myself visiting the branch nearest my new place
+Sure enough the Douglass-Truth branch is also a wonderful library and it left me wondering if <strong>all</strong> of Seattle's libraries were this nice.
+Shortly thereafter the idea was born to visit all 27 branches SPL has to offer.
+It took me just over 2 years to make the trip to all the branches (some are far away in parts of the city I never go to, okay!), and another year to figure out what to say about the experience, but it's here now.</p>
+<aside class="message-box warning">What you'll find below are my subjective rankings of my (usually brief) experience at each branch.
+  They don't necessarily reflect what the library is like all or most of the time.
+  The rating is mostly related to how enjoyable the branch was to work out of for the 2-4 hour stay I was there.
+  Some branches are not necessarily designed with this use case in mind, but that does not mean they are not valuable.
+  <b>
+    The rankings below are nothing more than nate's opinions.
+    Do not take them too seriously.
+  </b></aside>
+<h2 id="the-branches">The branches</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Branch</th>
+<th>Notes</th>
+<th style="text-align:center">Rating (x/5)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Central Library</td>
+<td>The pinnacle of SPLs. Awesome building, great lighting—even during the big dark—and lots of quiet space despite the open concept. I recommend the 10th floor if you want to work.</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td style="text-align:center">Ballard</td>
+<td>Nice space with good light and room to spread out, but there is a kids area near the &quot;work&quot; area which means you're either working or being distracted by screaming.</td>
+<td style="text-align:center">3</td>
+</tr>
+<tr>
+<td style="text-align:center">Beacon Hill</td>
+<td>Awesome high ceilings with big exposed wooden beams and good lighting.</td>
+<td style="text-align:center">4</td>
+</tr>
+<tr>
+<td style="text-align:center">Broadview</td>
+<td>Went here after my car got towed a near 2 hour journey from home by public transit. It's also the branch I got set up with an SPL account at. Despite the circumstance, it's a great library for working.</td>
+<td style="text-align:center">4</td>
+</tr>
+<tr>
+<td style="text-align:center">Capitol Hill</td>
+<td>Quite an interesting building with some nice exposed brick and vines. Seating and working area is limited, however.</td>
+<td style="text-align:center">3</td>
+</tr>
+<tr>
+<td style="text-align:center">Columbia</td>
+<td>Nice space, but I had the experience of being here after school got out and was packed with kids not quite respecting the &quot;don't play music out loud in the library&quot; rule.</td>
+<td style="text-align:center">3</td>
+</tr>
+<tr>
+<td style="text-align:center">Douglass-Truth</td>
+<td>This review comes with more bias than others since it is the branch I live closest to. Always a spot to sit, good lighting, and relatively quiet.</td>
+<td style="text-align:center">4</td>
+</tr>
+<tr>
+<td style="text-align:center">Fremont</td>
+<td>Even though I drove by this branch many times, I never knew it was a library until I visited it. A super cute older building tucked on the side of the road, but not much space to work.</td>
+<td style="text-align:center">3</td>
+</tr>
+<tr>
+<td style="text-align:center">Greenwood</td>
+<td>Pretty standard good (but not great) library.</td>
+<td style="text-align:center">3</td>
+</tr>
+<tr>
+<td style="text-align:center">CID</td>
+<td>Very small with limited space to work, especially when others are there. Helpful staff though!</td>
+<td style="text-align:center">2</td>
+</tr>
+<tr>
+<td style="text-align:center">Madrona-Sally Goldmark</td>
+<td>Very small, but I get the feeling it's usually quiet since it's in a bougie neighborhood. Warning though, it does seem to be a kids-oriented library so there may be screaming.</td>
+<td style="text-align:center">3</td>
+</tr>
+<tr>
+<td style="text-align:center">Magnolia</td>
+<td>Great neighborhood, okay library.</td>
+<td style="text-align:center">3</td>
+</tr>
+<tr>
+<td style="text-align:center">Montlake</td>
+<td>Everything you want from a work library. Good lighting, light chatter, and good view out the window.</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td style="text-align:center">NewHolly</td>
+<td>Small kids library in a kind of sad building, but basically no one there. Somehow didn't have any phone service and needed to make a call.</td>
+<td style="text-align:center">2</td>
+</tr>
+<tr>
+<td style="text-align:center">Northeast</td>
+<td>The nice landscaping of the outside clashes with the boring interior. It does mean you get nice plants to look at while you work though.</td>
+<td style="text-align:center">4</td>
+</tr>
+<tr>
+<td style="text-align:center">Queen Anne</td>
+<td>Cool building, but it was really busy (for a library) and it feels dark and dingy.</td>
+<td style="text-align:center">2</td>
+</tr>
+<tr>
+<td style="text-align:center">Wallingford</td>
+<td>No desks, so unusable for work (still a functioning library).</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">West Seattle</td>
+<td>Nice, open concept with some comfy seats facing the windows. Good for pondering.</td>
+<td style="text-align:center">4</td>
+</tr>
+<tr>
+<td style="text-align:center">University</td>
+<td>Nice lighting, but not much space to work from. Kinda smells.</td>
+<td style="text-align:center">2</td>
+</tr>
+<tr>
+<td style="text-align:center">Lake City</td>
+<td>Big library with lots of space, but they need to re-layout the place. Who put the desks are next to the bathrooms...</td>
+<td style="text-align:center">3</td>
+</tr>
+<tr>
+<td style="text-align:center">Green Lake</td>
+<td>Really nice space with good natural light and brand new bathrooms, but not a ton of table space.</td>
+<td style="text-align:center">4</td>
+</tr>
+<tr>
+<td style="text-align:center">Northgate</td>
+<td>Nothing to write home about. Worth stopping at if you're at the mall.</td>
+<td style="text-align:center">2</td>
+</tr>
+<tr>
+<td style="text-align:center">South Park</td>
+<td>Had low expectations here since South Park seems kind of drab, but it pleasantly surprised me.</td>
+<td style="text-align:center">4</td>
+</tr>
+<tr>
+<td style="text-align:center">Southwest</td>
+<td>Large open space with plenty of tables.</td>
+<td style="text-align:center">4</td>
+</tr>
+<tr>
+<td style="text-align:center">High Point</td>
+<td>Nice, but limited desk space. Visited this library same day as Southwest since they were close and I didn't have meetings :). There were children here.</td>
+<td style="text-align:center">3</td>
+</tr>
+<tr>
+<td style="text-align:center">Delridge</td>
+<td>Full of kids, and weird shaped desks.</td>
+<td style="text-align:center">2</td>
+</tr>
+<tr>
+<td style="text-align:center">Rainier Beach</td>
+<td>Nice big space, but feels sterile. Not sure if it was the hospital lighting, or something else, but not the place I wanted to hang.</td>
+<td style="text-align:center">3</td>
+</tr>
+</tbody>
+</table>
+<p>As you might have noticed, a theme I ran into is that libraries that cater towards kids generally don't function as well for working.
+With the potential exception of visiting during times when those kids are in school</p>
+<p>Visiting all these libraries left me thinking about what I like, and dislike about the library.
+I love that it's free, that I can browse books or walk around as I please, that I can stare out the window, that there are librarians to help me find information, that there's free Wi-Fi and water, and that there's no expectation to do much of anything while there besides not disrupt others.</p>
+<p>There are, however, some ways in which I wish the library served me <em>even better</em>.
+Most libraries have relatively limited hours, and sometimes I want to code at 10pm at places other than my home.
+I wish the library had more resources focused beyond that of the written word.
+Last year I had the pleasure of visiting Helsinki's Oodi library which offered access to video games, 3d printers, instruments, sewing machines, laser cutters, and more.
+America is not quite ready, in my mind, for that level of supporting neighbors, but I do see the desire among others to have resources like this.
+Take the many versions of the tool library that have popped up in Seattle (and I hope other cities), where folks can rent power tools for no cost to themselves<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>.
+I've found myself on multiple occasions wanting to use a typewriter for a specific project, but never wanting to bite the bullet and buy (and then store) one.
+After much hemming and hawing I did eventually buy one and used it thoroughly for a months time.
+Since then it has mostly just taken up space.
+Well run libraries can help solve the problem of massive waste generation from everyone buying items we only temporarily need!
+Whether or not we continue to call them libraries as the progress on to their next generation of support is another question.</p>
+<p>While I am not planning on 100%-ing the libraries (book and otherwise) in King County, I do still love visiting new libraries when the opportunity arises.
+E.g. the Bellevue library is a great library, even if placed in one of the most despicable cities imaginable.
+I hope this inspires you to check out your local library(s), even if you're not a completionist!</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>Seattle's parks are truly unmatched by anywhere else I've lived. It's easy to feel like you're miles away from the city despite being squarely in it. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>There is an optional donation/membership fee for those who can afford. <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/hello/">Writing in public</a></li>
+</ul>
+
+			</heading-anchors>
+		</main>
+
+		
+
+		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
+	</body>
+</html>

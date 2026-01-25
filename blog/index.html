@@ -8,7 +8,7 @@
 		<meta name="generator" content="Eleventy v3.1.2">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="nate&#39;s internet place">
 		
-		<style>.postlist { counter-reset: start-from 2 }
+		<style>.postlist { counter-reset: start-from 3 }
 /* This is an arbitrary CSS string added to the bundle */
 /* Defaults */
 :root {
@@ -153,12 +153,22 @@ header {
 	text-align: right;
 }
 
-table {
+/* table {
 	margin: 1em 0;
-}
+} */
 table td,
 table th {
-	padding-right: 1em;
+	padding: 0.5em;
+}
+
+tr:nth-child(even) {
+  background-color: #fff6ed;
+}
+
+@media (prefers-color-scheme: dark) {
+	tr:nth-child(even) {
+		background-color: #2e3a47;
+	}
 }
 
 pre,
@@ -287,6 +297,38 @@ header {
 }
 .post-metadata time {
 	margin-right: 1em;
+}
+.message-box {
+	--color-message-box: #ffc;
+
+	display: block;
+	background-color: var(--color-message-box);
+	color: var(--color-gray-90);
+	padding: 1em 0.625em; /* 16px 10px /16 */
+	margin: 1.25em 0;
+	border-left: 0.25em solid #a07900;
+
+	border-radius: 0px 30px 30px 0px;
+}
+
+.message-box.warning {
+	--color-message-box: #fff4e5;
+	border-left-color: #d06d21;
+}
+
+.message-box__title {
+	margin: 0 0 .5em;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	font-size: 0.75em;
+	color: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+	.message-box.warning {
+		--color-message-box: #432e1e;
+		border-left-color: #fcd34d;
+	}
 }</style>
 	</head>
 	<body>
@@ -314,6 +356,10 @@ header {
 
 
 <ol reversed="" class="postlist">
+	<li class="postlist-item">
+		<a href="/blog/spl/" class="postlist-link">Completing the Library</a>
+		<time class="postlist-date" datetime="2026-01-25">January 2026</time>
+	</li>
 	<li class="postlist-item">
 		<a href="/blog/hello/" class="postlist-link">Writing in public</a>
 		<time class="postlist-date" datetime="2025-10-19">October 2025</time>
