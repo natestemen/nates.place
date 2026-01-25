@@ -141,12 +141,22 @@ header {
 	text-align: right;
 }
 
-table {
+/* table {
 	margin: 1em 0;
-}
+} */
 table td,
 table th {
-	padding-right: 1em;
+	padding: 0.5em;
+}
+
+tr:nth-child(even) {
+  background-color: #fff6ed;
+}
+
+@media (prefers-color-scheme: dark) {
+	tr:nth-child(even) {
+	background-color: #2e3a47;
+	}
 }
 
 pre,

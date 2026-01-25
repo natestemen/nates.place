@@ -3,6 +3,7 @@ import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import footnote_plugin from 'markdown-it-footnote';
 
 import pluginFilters from "./_config/filters.js";
 
@@ -106,6 +107,15 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addShortcode("currentBuildDate", () => {
 		return (new Date()).toISOString();
 	});
+
+	eleventyConfig.addPairedShortcode("warning", (content, title = "") => {
+		const heading = title ? `<p class="message-box__title"><strong>${title}</strong></p>` : "";
+		const body = content.trim();
+		return `<aside class="message-box warning">${heading}${body}</aside>`;
+	});
+
+	// markdown footnotes
+	eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(footnote_plugin));
 
 	// Features to make your build faster (when you need them)
 
