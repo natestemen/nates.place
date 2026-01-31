@@ -8,6 +8,15 @@
 		<meta name="generator" content="{{ eleventy.generator }}">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 
+		<link rel="stylesheet" href="/katex/katex.min.css">
+
+		<script defer src="/katex/katex.min.js"></script>
+		<script
+			defer
+			src="/katex/auto-render.min.js"
+			onload="renderMathInElement(document.body);">
+		</script>
+
 		{#-
 		Plain-text bundles are provided via the `eleventy-plugin-bundle` plugin:
 		1. CSS:
