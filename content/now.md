@@ -9,6 +9,24 @@ const eleventyNavigation = {
     This is my <a href="https://nownownow.com/about">now</a> page.
 </small>
 
+## February 2<sup>nd</sup>, 2026
+
+I'm spending a few months at QuSoft as a visiting researcher continuing my work on mitiq and quantum software generally.
+I'm aiming to
+
+- get a 1.0 release of mitiq out
+- provide some numerical evidence for (or against) a conjecture of [Maris](https://homepages.cwi.nl/~maris/) and [Carli](https://github.com/Carli-B).
+- learn new quantum info/comp. from researchers here
+- put out new quantum zine 👀
+- make some progress on [`gate.directory`](https://gate.directory/)
+
+It's a bit of a unique position where I don't have a boss or someone to report to, so it's very open what I want to work on.
+
+Outside work I'm trying to stay consistent climbing and running in hopes of having a banger season in 2026.
+Oh and exploring the nooks and canals of Amsterdam.
+
+---
+
 ## August 3<sup>rd</sup>, 2025
 
 [WERQSHOP](https://werq.shop/) is complete and it was awesome!
