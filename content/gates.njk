@@ -1,0 +1,48 @@
+---
+title: nate's gates
+description: a zine by nate about gates
+permalink: /gates/
+---
+
+<h1>nate's gates</h1>
+
+<p>a zine about quantum stuff</p>
+
+<div class="gates-shelf">
+  <div class="gates-card">
+    <a href="/static/ng01.pdf"><img eleventy:ignore src="/static/ng01-thumb.png" alt="issue 01 cover"></a>
+    <span>issue 01</span>
+  </div>
+  <div class="gates-card">
+    <a href="/static/ng02.pdf"><img eleventy:ignore src="/static/ng02-thumb.png" alt="issue 02 cover"></a>
+    <span>issue 02</span>
+  </div>
+</div>
+
+{% css %}
+.gates-shelf {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.gates-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.85em;
+}
+
+.gates-card img {
+  display: block;
+  height: 180px;
+  width: auto;
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+
+.gates-card img:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transform: translateY(-2px);
+}
+{% endcss %}
