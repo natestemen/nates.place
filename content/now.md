@@ -9,6 +9,20 @@ const eleventyNavigation = {
     This is my <a href="https://nownownow.com/about">now</a> page.
 </small>
 
+## July 6<sup>th</sup>, 2026
+
+Back home in Seattle (as of April) and started up a new gig at IonQ, focusing on error mitigation tooling.
+It's a nice continuation of the work I was doing at UF with `mitiq`, just now from more of a production/tooling angle.
+I also get some time to continue maintaining `mitiq` which is fun.
+
+Working at a hardware company has been fun, and there are a lot of interesting people to learn from.
+Seeing hardware get built has made me interested in learning more about the history of classical computing.
+It seems like a lot of lessons can be gleaned from understanding the processes that brought computers into existence in hopes of reusing (or repurposing) those to bring about quantum computers.
+
+Outside work/tech, I've been climbing regularly, getting stronger (or at least more confident to try hard climbs) and just enjoying getting out into the cascades to explore the mountains.
+
+---
+
 ## February 2<sup>nd</sup>, 2026
 
 I'm spending a few months at QuSoft as a visiting researcher continuing my work on mitiq and quantum software generally.
