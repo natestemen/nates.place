@@ -4,8 +4,11 @@
 	"description": "nate's internet place",
 	"type": "module",
 	"scripts": {
+		"fetch-cv": "curl -fL -o public/static/cv.pdf https://github.com/natestemen/cultvoucher/releases/latest/download/cv.pdf",
+		"prebuild": "npm run fetch-cv",
 		"build": "npx @11ty/eleventy",
 		"build-nocolor": "cross-env NODE_DISABLE_COLORS=1 npx @11ty/eleventy",
+		"prestart": "npm run fetch-cv",
 		"start": "npx @11ty/eleventy --serve --quiet",
 		"debug": "cross-env DEBUG=Eleventy* npx @11ty/eleventy",
 		"debugstart": "cross-env DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",

@@ -38,9 +38,6 @@ jobs:
           key: ${{ runner.os }}-eleventy-fetch-cache
 
 
-      - name: Fetch latest CV
-        run: curl -fL -o public/static/cv.pdf https://github.com/natestemen/cultvoucher/releases/latest/download/cv.pdf
-
       - run: npm install
       - run: npm run build
 
